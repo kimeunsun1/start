@@ -19,7 +19,7 @@ public class Ex03 {
 		int num = (int)(Math.random() * (99999) + 0);
 		int page = 1;
 		// 페이지 수 계산
-		int result = (num <= 15) ? (page) : (num/15 + page);
+		int result = (num <= 15 && num >= 0) ? (page) : (num/15 + page);
 		// 출력
 		System.out.println("게시물 : " + num);
 		System.out.println("페이지수 : " + result);

@@ -13,5 +13,14 @@ package day04.ex;
  					400으로 나누어 떨어지는 해를 윤년이라 한다.
  */
 public class Ex04 {
-
+	public static void main(String[] args) {
+		// 할일
+		// 1000 ~ 3000 사아의 숫자를 랜덤 발생
+		int year = (int) (Math.random() * (3000 - 1000 + 1) + 1000);
+		
+		//윤년인지 평년인지 판별
+		String result = (year % 4 == 0) ? ((year % 100 != 0) ? ("수정해라") : ("윤년이 아닌 평년입니다.")) : ("윤년이 아닌 평년입니다.");
+		// 출력
+		System.out.println("연도 : " + year);
+	}
 }
