@@ -19,8 +19,12 @@ public class Ex04 {
 		int year = (int) (Math.random() * (3000 - 1000 + 1) + 1000);
 		
 		//윤년인지 평년인지 판별
-		String result = (year % 4 == 0) ? ((year % 100 != 0) ? ("수정해라") : ("윤년이 아닌 평년입니다.")) : ("윤년이 아닌 평년입니다.");
+		String result = (year % 4 == 0) ? (
+						(year % 100 != 0) ? (
+						(year % 400 == 0) ? ("윤년") : ("평년")) : ("평년")) 
+						: ("평년");
 		// 출력
 		System.out.println("연도 : " + year);
+		System.out.println(year + "년은 "+ result + "입니다.");
 	}
 }
