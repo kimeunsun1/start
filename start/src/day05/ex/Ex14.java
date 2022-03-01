@@ -12,15 +12,15 @@ package day05.ex;
 public class Ex14 {
 
 	public static void main(String[] args) {
-		int a = 0;
-		int b = 0;
-		int c = 0;
-		int d = 0;
+		int a = 1;
+		int b = 1;
+		int c = 1;
+		int d = 1;
 		
-		if(a > 1 && a <= 9) {
-			if(b > 1 && b <= 9) {
-				if(c > 1 && c <= 9) {
-					if(d > 1 && d <= 9) {
+		if(a >= 1 && a <= 9) {
+			if(b >= 1 && b <= 9) {
+				if(c >= 1 && c <= 9) {
+					if(d >= 1 && d <= 9) {
 						if ( a - b != 0 && a - c != 0 && a - d != 0) {
 							if ( b - c != 0 && b - d != 0) {
 								if ( c - d != 0) {
