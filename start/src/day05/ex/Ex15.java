@@ -14,11 +14,15 @@ package day05.ex;
 		...
 		6 x 9 = 54		7 x 9 = 63		8 x 9 = 72 		9 x 9 = 81
 		
-		
+		추가 문제 ]
+		2단 3단 4단
+		5단 6단 7단
+		8단 9단
  */
 public class Ex15 {
 
 	public static void main(String[] args) {
+		/*
 		for(int j = 0; j < 9; j++) {
 			for(int i = 2; i < 6; i++) {
 				System.out.print(i + " x " + (j + 1) + " = " + (i * (j + 1)) + "\t");
@@ -33,6 +37,7 @@ public class Ex15 {
 			}
 			System.out.println();
 		}
+		*/
 	}
 
 }

@@ -11,12 +11,19 @@ package day05.ex;
 				두번째 자리수와 마지막에서 두번째 자리수
 				...
 				가 동일한 수를 말한다.
+				
+			abcde
+			이 숫자가 회문수가 되려면
+			a == e
+			b == d	
  */
 import java.util.*;
 
 public class Ex12 {
 
 	public static void main(String[] args) {
+		
+		/*
 		// 5자리 숫자 입력
 		Scanner sc = new Scanner(System.in);
 		System.out.print("숫자 입력 : ");
@@ -31,6 +38,8 @@ public class Ex12 {
 			}
 		}
 		// 결과 도출
+		 
+		*/
 	}
 
 }

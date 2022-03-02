@@ -10,12 +10,19 @@ package day05.ex;
 public class Ex11 {
 
 	public static void main(String[] args) {
+		for(int x = 0 ; x <= 10; x++) {
+			for(int y = 0; y <= 10; y++) {
+				if(2 * x + 4 * y == 10) {
+					System.out.println("x : " + x + " | y : " + y + " 일때 성립한다.");
+				}
+			}
+		}
 		/*
 		int x = 1;
 		int y = 2;
 		System.out.println(2 * x + 4 * y);
 		*/
-		
+		/*
 		for(int x = 0 ; x <= 10 ; x++) {
 			int x1 = x + 1;
 			for(int y = 0 ; y <= 10 ; y++) {
@@ -25,7 +32,7 @@ public class Ex11 {
 				}
 			}
 		}
-		
+		*/
 		
 		/*
 		int x = 0;

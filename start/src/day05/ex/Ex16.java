@@ -14,25 +14,40 @@ package day05.ex;
 		...
 		3 x 9 = 27		5 x 9 = 45		7 x 9 = 63 		9 x 9 = 81
 		
-	
+
 */
 public class Ex16 {
 
 	public static void main(String[] args) {
+		for(int i = 0; i < 2; i++) {
+			for(int j = 0; j < 9; j++) {
+				for(int k = 0; k < 4; k++) {
+					int dan = 2 * k + 2 + i;
+					int gop = j + 1;
+					
+					// 출력
+					System.out.print(dan + " x " + gop + " = " + (dan * gop) + "\t");
+				}
+				System.out.println();
+			}
+			
+			System.out.println();
+		}
+		/*
 		for(int j = 0; j < 9 ; j++) {
 			for(int i = 2 ; i < 9 ; i++) {
 				
 				if(i % 2 == 0) {
 					System.out.print(i + " x " + (j + 1) + " = " + (i * (j + 1)) + "\t");
 				} 
-				/*
+				
 				else if(i % 2 != 0){
 					
 					System.out.println();
 					System.out.print(i + " x " + (j + 1) + " = " + (i * (j + 1)) + "\t");
 					
 				}
-				*/
+				
 				//System.out.println();
 			}
 			
@@ -46,19 +61,20 @@ public class Ex16 {
 				if(i % 2 != 0) {
 					System.out.print(i + " x " + (j + 1) + " = " + (i * (j + 1)) + "\t");
 				} 
-				/*
+				
 				else if(i % 2 != 0){
 					
 					System.out.println();
 					System.out.print(i + " x " + (j + 1) + " = " + (i * (j + 1)) + "\t");
 					
 				}
-				*/
+				
 				//System.out.println();
 			}
 			
 			System.out.println();
 		}
+		*/
 	}
 
 }

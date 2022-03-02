@@ -6,12 +6,49 @@ package day05.ex;
 		
 		1. 4자리 숫자 abcd는 0이 들어있지 않고, 모두 다른 숫자이다.
 		2. 첫번째 숫자(a)가 마지막 숫자(d)보다 2 큼
+			a:	3 <=
+				9 >=
+				
+			d : 1 <=
+				7 >=
 		3. 두번째 숫자(b)가 세번째 숫자(c)보다 크다.
+			b > c	==> c + 1 부터 시작
 		4. 4자리 숫자를 역순으로 하고 그 수와 4자리수를 합하면 16456이 된다.
+		
+			a	b	c	d
+		+	d	c	b	a
+		==> 16456
  */
 public class Ex14 {
 
 	public static void main(String[] args) {
+		int a = 3;
+		int b = 2;
+		int c = 1;
+		int d = 1;
+		
+		if(a >= 3 && a <= 9) {
+			if(b >= 2 && b <= 7) {
+				if(c >= 1 && c <= 6) {
+					if(d >= 1 && d <= 9) {
+						if ( a - b != 0 && a - c != 0 && a - d != 0) {
+							if ( b - c != 0 && b - d != 0) {
+								if ( c - d != 0) {
+									if(a - d == 2) {
+										if(b > c) {
+											if((a*1000)+(b*100)+(c*10)+d+(d*1000)+(c*100)+(b*10)+a==16456) {
+												System.out.println("답은 " + (a*1000)+(b*100)+(c*10)+d);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		/*
 		int a = 1;
 		int b = 1;
 		int c = 1;
@@ -38,6 +75,7 @@ public class Ex14 {
 				}
 			}
 		}
+		*/
 	}
 
 }
