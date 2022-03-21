@@ -28,7 +28,7 @@ public class Test05 {
 	// 범위를 입력하면 랜덤하게 범위안의 정수를 만들어주는 함수
 	public int getInt(int pos1, int pos2) {
 		int min = pos1 < pos2 ? pos1 : pos2;
-		int max = pos2 < pos2 ? pos2 : pos1;
+		int max = pos1 < pos2 ? pos2 : pos1;
 		int no = (int)(Math.random()*(max - min + 1) + min);
 		
 		return no;

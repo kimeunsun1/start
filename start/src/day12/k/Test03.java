@@ -1,4 +1,4 @@
-package day12;
+package day12.k;
 
 public class Test03 {
 	public Test03() {
